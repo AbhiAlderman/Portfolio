@@ -1,11 +1,14 @@
 import React from 'react';
-  
+import './style.css';
+
 const About = () => {
   return (
     <div>
-      <h1>This will be the home/about page. Gotta choose which name!</h1>
+      <h1>This might be an about page. Could probably put about stuff
+            in the home section, so delete this later!
+      </h1>
     </div>
   );
 };
-  
-export default About
+
+export default About;
