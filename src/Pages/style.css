@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  --blue-green: #2b6777; /* use for main background */
+  --green: #52ab98;
+  --white: #ffffff;
+  --light-gray: #f2f2f2;
+  --light-blue: #c8d8e4;
+
+  /*grays*/
+  --gray1: #999999;
+  --gray2: #777777;
+  --gray3: #555555;
+  --gray4: #333333;
+  --black: #111111;
+
+}
+
 html, body {
   margin: 0;
   font-family: 'Trebuchet MS', sans-serif;
@@ -14,4 +30,9 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--gray4);
   scroll-behavior: smooth;
+}
+
+.icon {
+  font-size: 40px;
+  color: var(--green);
 }
