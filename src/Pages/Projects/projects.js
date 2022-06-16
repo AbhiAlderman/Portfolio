@@ -1,14 +1,15 @@
 import React from 'react';
 import './projects.css';
-import robot1 from './Visuals/robot1.gif';
 import robot2 from './Visuals/robot2.gif';
 import robot3 from './Visuals/robot3.gif';
+/*
 import pcbEmpty from './Visuals/PCB_Empty.jpg';
 import pcbAssembled from './Visuals/PCB_Assembled.jpg';
 import jeffrey from './Visuals/jeffrey.jpg';
 import flip from './Visuals/manual_flip.gif';
 import cutter from './Visuals/cutter.png';
 import crusader from './Visuals/bayarea_crusader.jpg';
+*/
 import cruuz from './Visuals/cruuz.png';
 import cruuz_website from './Visuals/cruuz_website.JPG';
 import eyes from './Visuals/eyes.gif';
