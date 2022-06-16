@@ -29,30 +29,12 @@ import eyesWebpage from './Visuals/webpage.jpg';
 const Projects = () => {
   return (
     <div className="projects">
-      <h1 className="title">PROJECTS</h1>
+      <h1 className="title">Projects</h1>
       <p> Display of my industry work and personal projects</p>
       <br></br>
       <br></br>
+      
       <h2 className="type"> Industry Experience</h2>
-        <br></br>
-        <h2 className="label">Benchmark Electronics</h2>
-          <h3 className="position">Automation Engineering Intern</h3>
-          <h3 className="position">Technologies: KUKA Programming, TinkerCAD, Data Structures, Algorithms</h3>
-          <br></br>
-            <div className="project-grid">
-              <div>
-                <img src={robot2} className="visuals" alt="Benchmark Robot 2"/>
-                <p className="description">Polishing surface</p>
-              </div>
-              <p className="description"> At Benchmark Electronics I programmed and operated a KUKA Robotic Arm. 
-              I programmed the Robot arm to autonomously pick up tools, pick up and flip products, deburr holes, polish surfaces,
-              and brush edges. <br></br><br></br> Further visuals and description available upon request </p>
-              <div>
-              <img src={robot3} className="visuals" alt="Benchmark Robot 3"/>
-              <p className="description">Deburring holes</p>
-              </div>
-              
-            </div>
         <br></br>
         <h2 className="label">Cruuz Inc</h2>
           <h3 className="position">Software Engineering Intern</h3>
@@ -72,6 +54,25 @@ const Projects = () => {
               <img src={cruuz_website} className="cruuzWeb" alt="Cruuz inc website screencap"/>
                 <p className="description">In-app demo</p>
               </div>
+            </div>
+        <br></br>
+        <h2 className="label">Benchmark Electronics</h2>
+          <h3 className="position">Automation Engineering Intern</h3>
+          <h3 className="position">Technologies: KUKA Programming, TinkerCAD, Data Structures, Algorithms</h3>
+          <br></br>
+            <div className="project-grid">
+              <div>
+                <img src={robot2} className="visuals" alt="Benchmark Robot 2"/>
+                <p className="description">Polishing surface</p>
+              </div>
+              <p className="description"> At Benchmark Electronics I programmed and operated a KUKA Robotic Arm. 
+              I programmed the Robot arm to autonomously pick up tools, pick up and flip products, deburr holes, polish surfaces,
+              and brush edges. <br></br><br></br> Further visuals and description available upon request </p>
+              <div>
+              <img src={robot3} className="visuals" alt="Benchmark Robot 3"/>
+              <p className="description">Deburring holes</p>
+              </div>
+              
             </div>
       <h2 className="type">Relevant Personal Projects</h2>
         <br></br>

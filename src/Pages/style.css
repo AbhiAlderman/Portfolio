@@ -34,9 +34,9 @@ html, body {
 
 .icon {
   font-size: 40px;
-  color: var(--green);
+  color: var(--light-blue);
 }
 
 .title {
-  color: var(--green);
+  color: var(--french-pass);
 }

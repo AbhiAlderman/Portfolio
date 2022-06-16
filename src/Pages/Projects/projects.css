@@ -89,5 +89,6 @@ Format for the empty pcb picture
 }
 /*labels to seperate project types*/
 .type{
-    color:var(--blue-green);
+    /*color:var(--blue-green);*/
+    color: var(--french-pass);
 }
