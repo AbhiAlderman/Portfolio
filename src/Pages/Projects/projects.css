@@ -12,12 +12,53 @@ body {
     width: 300px;
 }
 
-.grid-layout {
+.projects {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--light-gray);
+    
+    text-align: center;
+}
+
+.benchmark {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
-    
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: center;
+
     padding-block: 2rem;
     width: min(95%, 70rem);
-    margin-inline: auto
+    margin-inline: auto;
+}
+.cruuz{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 20% 50% 30%;
+    text-align: center;
+
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+
+.cruuzWeb {
+    height: 500px;
+    width: 300px;
+}
+
+/*the title above each project */
+.label{
+    color:var(--gray5);
+    font-size: 25px;
+}
+
+/*description for each project */
+.description{
+    color:var(--gray1);
+}
+/*labels to seperate project types*/
+.type{
+    color:var(--blue-green);
+
 }

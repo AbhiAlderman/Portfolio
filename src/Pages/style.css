@@ -36,3 +36,7 @@ html, body {
   font-size: 40px;
   color: var(--green);
 }
+
+.title {
+  color: var(--green);
+}
