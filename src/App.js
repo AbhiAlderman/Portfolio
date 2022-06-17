@@ -7,7 +7,6 @@ import About from './Pages/about';
 import Projects from './Pages/Projects/projects';
 import Coursework from './Pages/Coursework/coursework';
 import Home from './Pages';
-import Todo from './Pages/todo';
 import Bar from "./Components/Navbar/bar.js";
 
 
@@ -20,7 +19,6 @@ return (
         <Route path='/about' element={<About/>} />
         <Route path='/projects' element={<Projects/>} />
         <Route path='/coursework' element={<Coursework/>} />
-        <Route path='/todo' element={<Todo/>} />
     </Routes>
     </Router>
 );

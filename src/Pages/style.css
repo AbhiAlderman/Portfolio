@@ -41,3 +41,19 @@ html, body {
   color: var(--french-pass);
 }
 
+.home-grid{
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  margin-inline: auto;
+}
+
+.profile{
+  height: 600px;
+  width: 300px;
+}
+
