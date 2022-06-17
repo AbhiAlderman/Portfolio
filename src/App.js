@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route}
@@ -11,6 +12,10 @@ import Bar from "./Components/Navbar/bar.js";
 
 
 function App() {
+    useEffect(() => {
+        document.title = "Abhi Alderman"
+      }, [])
+
 return (
     <Router>
     <Bar />
