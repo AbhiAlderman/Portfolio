@@ -76,7 +76,7 @@ export default function projectLayout(props) {
 
 
     return (
-        <div>
+        <div id={props.project.id}>
             <h2 className="label">{props.project.name}</h2>
             <h3 className="position">{props.project.position}</h3>
             {technologies}

@@ -17,17 +17,6 @@ const Coursework = () => {
 
 const courseCards = [
   {
-    title: 'HOPE Decal',
-    name: 'Hands-On PCB Engineering',
-    skills: 'C, C++, KiCAD, TinkerCAD, Mechatronics Design',
-    projects: [
-      ['Animatronic Eyes', '/projects']
-    ],
-    date: 'Spring 2022',
-    url: 'https://ieee.berkeley.edu/hope/'
-  },
-
-  {
     title: 'CS 170',
     name: 'Efficient Algorithms and Intractable Problems',
     skills: 'Python, Dynamic Programming, Algorithm Design, Runtimes, Proofs',
@@ -36,6 +25,16 @@ const courseCards = [
     ],
     date: 'Spring 2022',
     url: 'https://cs170.org/'
+  },
+  {
+    title: 'HOPE Decal',
+    name: 'Hands-On PCB Engineering',
+    skills: 'C, C++, KiCAD, TinkerCAD, Mechatronics Design',
+    projects: [
+      ['Animatronic Eyes', '/projects/#animatronic']
+    ],
+    date: 'Spring 2022',
+    url: 'https://ieee.berkeley.edu/hope/'
   },
   {
     title: 'CS 61C',

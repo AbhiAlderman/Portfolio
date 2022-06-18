@@ -8,7 +8,7 @@ const Bar = ()=> {
         <Navbar bg="#3333333" variant="dark" expand="lg">
           
   <Container>
-    <Navbar.Brand className="name">Abhi Alderman</Navbar.Brand>
+    <Navbar.Brand className="name" href="/">Abhi Alderman</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
