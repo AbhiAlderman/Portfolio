@@ -36,7 +36,7 @@ export default function coursecard(props) {
 
     return (
     <div className="courseCard">
-        <Card className="card" style={{ width: '18rem', textAlign: "center"}} >
+        <Card className="card" style={{ height: '20rem', width: '18rem', textAlign: "center"}} >
           <Card.Body>
             <Card.Title className="type">{props.card.title}</Card.Title>
               <Card.Subtitle className="course-name">
@@ -46,11 +46,11 @@ export default function coursecard(props) {
                   {skills}
                   {projects}
               </Card.Text>
-              <Card.Footer className="class-date">
+          </Card.Body>
+          <Card.Footer className="class-date">
                 {props.card.date}
               </Card.Footer>
             <Button href={props.card.url} className="class-link">Course Site</Button>
-          </Card.Body>
         </Card>
         </div>
     )

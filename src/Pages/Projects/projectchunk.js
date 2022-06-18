@@ -25,35 +25,135 @@ export default function projectLayout(props) {
         </div>
     )
     let leftVisual;
-    if (props.project.leftVisual === ''){
-        leftVisual = (
-            <div>
-
-            </div>
-        )
-    } else {
-        leftVisual = (
-            <div>
-                <img src={props.project.leftVisual} className="visuals" alt=''/>
-                <p className="description">{props.project.leftVisualSubtitle}</p>
-            </div>
-        )
+    
+    switch (props.project.leftType) {
+        case ('vertical'):
+            leftVisual = (
+                <div>
+                    <img src={props.project.leftVisual} className="visuals-vertical" alt=''/>
+                    <p className="description">{props.project.leftVisualSubtitle}</p>
+                </div>
+            )
+            break;
+        case ('horizontal'):
+            leftVisual = (
+                <div>
+                    <img src={props.project.leftVisual} className="visuals-horizontal" alt=''/>
+                    <p className="description">{props.project.leftVisualSubtitle}</p>
+                </div>
+            )
+            break;
+        case ('squareBig'):
+            leftVisual = (
+                <div>
+                    <img src={props.project.leftVisual} className="visuals-squareBig" alt=''/>
+                    <p className="description">{props.project.leftVisualSubtitle}</p>
+                </div>
+            )
+            break;
+        case ('squareSmall'):
+            leftVisual = (
+                <div>
+                    <img src={props.project.leftVisual} className="visuals-squareSmall" alt=''/>
+                    <p className="description">{props.project.leftVisualSubtitle}</p>
+                </div>
+            )
+            break;
+        default:
+            leftVisual = (
+                <div>
+    
+                </div>
+            )
     }
 
     let rightVisual;
-    if (props.project.rightVisual === ''){
-        rightVisual = (
-            <div>
+    
+    switch (props.project.rightType) {
+        case ('vertical'):
+            rightVisual = (
+                <div>
+                    <img src={props.project.rightVisual} className="visuals-vertical" alt=''/>
+                    <p className="description">{props.project.rightVisualSubtitle}</p>
+                </div>
+            )
+            break;
+        case ('horizontal'):
+            rightVisual = (
+                <div>
+                    <img src={props.project.rightVisual} className="visuals-horizontal" alt=''/>
+                    <p className="description">{props.project.rightVisualSubtitle}</p>
+                </div>
+            )
+            break;
+        case ('squareBig'):
+            rightVisual = (
+                <div>
+                    <img src={props.project.rightVisual} className="visuals-squareBig" alt=''/>
+                    <p className="description">{props.project.rightVisualSubtitle}</p>
+                </div>
+            )
+            break;
+        case ('squareSmall'):
+            rightVisual = (
+                <div>
+                    <img src={props.project.rightVisual} className="visuals-squareSmall" alt=''/>
+                    <p className="description">{props.project.rightVisualSubtitle}</p>
+                </div>
+            )
+            break;
+        default:
+            rightVisual = (
+                <div>
+    
+                </div>
+            )
+    }
 
-            </div>
-        )
-    } else {
-        rightVisual = (
-            <div>
-                <img src={props.project.rightVisual} className="visuals" alt=''/>
-                <p className="description">{props.project.rightVisualSubtitle}</p>
-            </div>
-        )
+    let middleVisual;
+    
+    switch (props.project.middleType) {
+        case ('vertical'):
+            middleVisual = (
+                <div>
+                    <img src={props.project.middleVisual} className="visuals-vertical" alt=''/>
+                    <p className="description">{props.project.middleVisualSubtitle}</p>
+                </div>
+            )
+            break;
+
+        case ('horizontal'):
+            middleVisual = (
+                <div>
+                    <img src={props.project.middleVisual} className="visuals-horizontal" alt=''/>
+                    <p className="description">{props.project.middleVisualSubtitle}</p>
+                </div>
+            )
+            break;
+        case ('squareBig'):
+            middleVisual = (
+                <div>
+                    <img src={props.project.middleVisual} className="visuals-squareBig" alt=''/>
+                    <p className="description">{props.project.middleVisualSubtitle}</p>
+                </div>
+            )
+            break;
+        case ('squareSmall'):
+            middleVisual = (
+                <div>
+                    <img src={props.project.middleVisual} className="visuals-squareSmall" alt=''/>
+                    <p className="description">{props.project.middleVisualSubtitle}</p>
+                </div>
+            )
+            break;
+            
+        default:
+            middleVisual = (
+                <div>
+    
+                </div>
+            )
+            break;
     }
 
     let links;
@@ -81,12 +181,13 @@ export default function projectLayout(props) {
             <h3 className="position">{props.project.position}</h3>
             {technologies}
             <br></br>
+                <div>
+                    <p className="description">{props.project.description}</p>
+                    {links}
+                </div>
                 <div className="project-grid">
-                    <div>
-                        <p className="description">{props.project.description}</p>
-                        {links}
-                    </div>
                     {leftVisual}
+                    {middleVisual}
                     {rightVisual}
                 </div>
         </div>

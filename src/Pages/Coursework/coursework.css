@@ -31,8 +31,12 @@ body {
   
   
 }
+
 .card{
-  background-color: var(--gray4);
+  background-color: var(--dark);
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
 
 .course-name{
@@ -53,6 +57,10 @@ body {
 .class-link{
   height: 50px;
   width: 170px;
+  
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
 
 .skills-projects{

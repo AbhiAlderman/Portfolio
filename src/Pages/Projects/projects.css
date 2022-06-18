@@ -7,10 +7,26 @@ body {
     text-align: center;
 }
 
-.visuals {
+.visuals-vertical{
     height: 500px;
     width: 300px;
 }
+
+.visuals-horizontal {
+    height: 300px;
+    width: 500px;
+}
+
+.visuals-squareBig {
+    height: 500px;
+    width: 500px;
+}
+
+.visuals-squareSmall {
+    height: 300px;
+    width: 300px;
+}
+
 
 .projects {
     font-family: 'Trebuchet MS', sans-serif;
@@ -93,12 +109,19 @@ Format for the empty pcb picture
 }
 .position{
     font-size: 20px;
-    color: var(--gray2);
+    color: var(--gray1);
 }
 
 /*description for each project */
 .description{
     color:var(--gray1);
+    gap: 1.5rem;
+    text-align: center;
+
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+
 }
 /*labels to seperate project types*/
 .type{

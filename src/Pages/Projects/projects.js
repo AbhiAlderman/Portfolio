@@ -2,31 +2,18 @@ import React from 'react';
 import './projects.css';
 import robot2 from './Visuals/robot2.gif';
 import robot3 from './Visuals/robot3.gif';
-/*
-import pcbEmpty from './Visuals/PCB_Empty.jpg';
-import pcbAssembled from './Visuals/PCB_Assembled.jpg';
-import jeffrey from './Visuals/jeffrey.jpg';
-import flip from './Visuals/manual_flip.gif';
-import cutter from './Visuals/cutter.png';
-import crusader from './Visuals/bayarea_crusader.jpg';
-*/
+
 import cruuz from './Visuals/cruuz.png';
 import cruuz_website from './Visuals/cruuz_website.JPG';
 import eyes from './Visuals/eyes.gif';
 import eyesWebpage from './Visuals/webpage.jpg';
+import toolpick from './Visuals/toolpick.gif';
+
 import ProjectChunk from './projectchunk.js';
-/*
-<img src={robot1} className="visuals" alt="Benchmark Robot 1"/>
-        <img src={robot2} className="visuals" alt="Benchmark Robot 2"/>
-        <img src={flip} className="visuals" alt="Me manually flipping part"/>
-        <img src={robot3} className="visuals" alt="Benchmark Robot 3"/>
-        <img src={pcbEmpty} className="visuals" alt="Empty PCB"/>
-        <img src={pcbAssembled} className="visuals" alt="Assembled PCB"/>
-        <img src={jeffrey} className="visuals" alt="jeffrey"/>
-        <img src={cutter} className="visuals" alt="Ribbon cutting robot"/>
-        <img src={crusader} className="visuals" alt="Crusader at Bay Area Science Festival"/>
-      
-*/
+import BottomBar from './../Bottombar/bottombar.js';
+
+
+
 const Projects = () => {
   return (
     <div className="projects">
@@ -43,6 +30,7 @@ const Projects = () => {
         <br></br>
         {personalProjects.map(project => <ProjectChunk key={project.name} project={project}/>)}
         <br></br>
+      <BottomBar></BottomBar>
     </div>
   );
 };
@@ -62,10 +50,18 @@ const industryProjects = [
     name: 'Cruuz Inc.',
     position: 'Software Engineering Intern',
     technologies: 'Swift, React, Javascript, CSS, HTML, Git',
+
     leftVisual: cruuz,
+    leftType: 'squareSmall',
     leftVisualSubtitle: 'Cruuz Logo',
+    middleVisual: '',
+    middleType: '',
+    middleVisualSubtitle: '',
     rightVisual: cruuz_website,
+    rightType: 'vertical',
     rightVisualSubtitle: 'In-App Demo',
+
+
     description:'Cruuz Inc. is a startup focused on providing \n' + 
               'haircut and beauty appointment booking through an all-encompassing app. Users are able \n' + 
               'to use the app to book an appointment from multiple salons in the area, much like \n' + 
@@ -79,10 +75,17 @@ const industryProjects = [
     name: 'Benchmark Electronics',
     position: 'Automation Engineering Intern',
     technologies: 'KUKA Programming, TinkerCAD, Data Structures, Algorithms',
+
     leftVisual: robot2,
+    leftType: 'vertical',
     leftVisualSubtitle: 'Polishing Surface',
+    middleVisual: toolpick,
+    middleType: 'horizontal',
+    middleVisualSubtitle: 'Picking Tool',
     rightVisual: robot3,
+    rightType: 'vertical',
     rightVisualSubtitle: 'Deburring Holes',
+
     description: 'At Benchmark Electronics I programmed and operated a KUKA Robotic Arm. \n' + 
                   'I programmed the Robot arm to autonomously pick up tools, pick up and flip products, deburr holes, polish surfaces \n' +
                   'and brush edges. The potters wheel was equiped with an encoder and used to autonomously spin the different parts around. \n' + 
@@ -99,10 +102,17 @@ const personalProjects = [
     name: 'Personal Website',
     position: '',
     technologies: 'React, Javascript, CSS, HTML, Git',
+
     leftVisual: '',
+    leftType: '',
     leftVisualSubtitle: '',
+    middleVisual: '',
+    middleType: '',
+    middleVisualSubtitle: '',
     rightVisual: '',
+    rightType: '',
     rightVisualSubtitle: '',
+
     description: 'I created this website in Summer 2022 to showcase my skills in Software. \n' +
                   'This was my first relatively large front-end project. I learned everything I needed to know from youtube, \n' +
                   'stack overflow, documentation, and friends. It took approximately a week for me to finish the rough draft \n' +
@@ -114,10 +124,17 @@ const personalProjects = [
     name: 'Animatronic Eyes',
     position: '',
     technologies: 'Arduino, C, C++, C#, TinkerCAD, KiCAD',
+
     leftVisual: eyesWebpage,
+    leftType: 'vertical',
     leftVisualSubtitle: 'Webserver from Microcontroller',
+    middleVisual: '',
+    middleType: '',
+    middleVisualSubtitle: '',
     rightVisual: eyes,
+    rightType: 'vertical',
     rightVisualSubtitle: 'Animatronic Eyes Tracking a Face',
+
     description: 'Created a pair of Animatronic Eyes with two other students. \n' +
                   'Eyes were modeled using TinkerCAD, the PCB was fully designed by us in KiCAD and manufactured in China, \n' +
                   'and the servos were controlled by an ESP32-CAM microcontroller. \n' +

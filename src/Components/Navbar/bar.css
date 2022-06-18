@@ -16,14 +16,17 @@
     --french-pass: #B8E3FF;
 
     /*grays*/
-    --gray1: #999999;
+    --gray1: #DCDCDC;
     --gray2: #777777;
     --gray3: #555555;
     --gray4: #333333;
     --black: #111111;
 
     --header-gray: #ffffff8c;
-
+    /*discord color palette */
+    --not-black: #23272A;
+    --dark: #2c2F33;
+    --greyple: #99AAB5;
 }
     
 
@@ -35,4 +38,9 @@
 
 .header{
     color: var(--header-gray);
+}
+
+.topBar{
+    background-color: var(--not-black);
+    
 }

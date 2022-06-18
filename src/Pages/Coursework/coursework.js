@@ -1,6 +1,7 @@
 import React from 'react';
 import './coursework.css';
 import CourseCard from './coursecard.js';
+import BottomBar from './../Bottombar/bottombar.js';
 
 const Coursework = () => {
   return (
@@ -11,14 +12,15 @@ const Coursework = () => {
       <div className="card-grid">
       {courseCards.map(card => <CourseCard key={card.title} card={card} />)}
       </div>
+      <BottomBar></BottomBar>
     </div>
   );
 };
 
 const courseCards = [
   {
-    title: 'CS 170',
-    name: 'Efficient Algorithms and Intractable Problems',
+    name: 'CS 170',
+    title: 'Efficient Algorithms and Intractable Problems',
     skills: 'Python, Dynamic Programming, Algorithm Design, Runtimes, Proofs',
     projects: [
       ['Algorithm Design', 'https://github.com/AbhiAlderman/170-Project']
@@ -27,8 +29,8 @@ const courseCards = [
     url: 'https://cs170.org/'
   },
   {
-    title: 'HOPE Decal',
-    name: 'Hands-On PCB Engineering',
+    name: 'HOPE Decal',
+    title: 'Hands-On PCB Engineering',
     skills: 'C, C++, KiCAD, TinkerCAD, Mechatronics Design',
     projects: [
       ['Animatronic Eyes', '/projects/#animatronic']
@@ -37,8 +39,8 @@ const courseCards = [
     url: 'https://ieee.berkeley.edu/hope/'
   },
   {
-    title: 'CS 61C',
-    name: 'Great Ideas in Computer Architecture (Machine Structures)',
+    name: 'CS 61C',
+    title: 'Computer Architecture',
     skills: 'C, RISC-V, Linux, Logisim, Computer Architecture',
     projects: [
       ['snek', 'https://cs61c.org/sp22/projects/proj1/#conceptual-overview'],
@@ -50,16 +52,16 @@ const courseCards = [
     url: 'https://cs61c.org/sp22/'
   },
   {
-    title: 'CS 70',
-    name: 'Discrete Mathematics and Probability Theory',
+    name: 'CS 70',
+    title: 'Discrete Mathematics and Probability Theory',
     skills: 'Algorithms, Runtimes, Proofs',
     projects: [],
     date: 'Fall 2021',
     url: 'https://www.eecs70.org/'
   },
   {
-    title: 'CS 61B',
-    name: 'Data Structures',
+    name: 'CS 61B',
+    title: 'Data Structures',
     skills: 'Java, JUnit, Git, Data Structures, Algorithms',
     projects: [
       ['Gitlet', 'https://github.com/AbhiAlderman/Gitlet'],
@@ -68,8 +70,8 @@ const courseCards = [
     url: 'https://sp21.datastructur.es/'
   },
   {
-    title: 'CS 61A',
-    name: 'Structure and Interpretation of Computer Programs',
+    name: 'CS 61A',
+    title: 'Structure and Interpretation of Computer Programs',
     skills: 'Python, Scheme, SQL, Git, Data Structures',
     projects: [
       ['Scheme Interpreter', 'https://inst.eecs.berkeley.edu/~cs61a/fa20/proj/scheme/'],
@@ -79,8 +81,8 @@ const courseCards = [
     url: 'https://inst.eecs.berkeley.edu/~cs61a/fa20/'
   }, 
   {
-    title: 'EECS 16B',
-    name: 'Designing Information Devices and Systems II',
+    name: 'EECS 16B',
+    title: 'Designing Information Devices and Systems II',
     skills: 'Python, Numpy, Arduino, Differential Equations, Circuit Design',
     projects: [
       ['S1XT33N Car', 'https://inst.eecs.berkeley.edu/~ee16b/sp16/proj/']
@@ -89,16 +91,16 @@ const courseCards = [
     url: 'https://www.eecs16b.org/'
   },
   {
-    title: 'EECS 16A',
-    name: 'Designing Information Devices and Systems I',
+    name: 'EECS 16A',
+    title: 'Designing Information Devices and Systems I',
     skills: 'Python, NumPy, Differential Equations, Circuit Design, Soldering',
     projects: [],
     date: 'Spring 2021',
     url: 'https://inst.eecs.berkeley.edu/~ee16a/sp21/'
   },
   {
-    title: 'CS 195',
-    name: 'Social Implications of Computer Technology',
+    name: 'CS 195',
+    title: 'Social Implications of Computer Technology',
     skills: 'Ethics, Education',
     projects: [],
     date: 'Spring 2022',
