@@ -82,11 +82,11 @@ export default function projectLayout(props) {
             {technologies}
             <br></br>
                 <div className="project-grid">
-                    {leftVisual}
                     <div>
                         <p className="description">{props.project.description}</p>
                         {links}
                     </div>
+                    {leftVisual}
                     {rightVisual}
                 </div>
         </div>

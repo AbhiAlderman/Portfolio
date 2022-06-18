@@ -19,6 +19,18 @@ body {
   width: min(95%, 70rem);
   margin-inline: auto;
 }
+
+@media only screen and (max-width: 1200px) {
+  .card-grid{
+    margin: auto;
+    width: 50%;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  
+  
+}
 .card{
   background-color: var(--gray4);
 }

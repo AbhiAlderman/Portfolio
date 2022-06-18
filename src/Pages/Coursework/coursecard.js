@@ -36,7 +36,7 @@ export default function coursecard(props) {
 
     return (
     <div className="courseCard">
-        <Card className="card" style={{ width: '18rem'}} >
+        <Card className="card" style={{ width: '18rem', textAlign: "center"}} >
           <Card.Body>
             <Card.Title className="type">{props.card.title}</Card.Title>
               <Card.Subtitle className="course-name">

@@ -33,6 +33,19 @@ body {
     margin-inline: auto;
 }
 
+@media only screen and (max-width: 1200px) {
+    .project-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: 1fr;
+        text-align: center;
+
+        padding-block: 2rem;
+        width: min(95%, 70rem);
+        margin-inline: auto;
+    }
+}
+
 
 /*For the picture on the right of cruuz*/
 .cruuzWeb {
