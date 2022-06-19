@@ -14,7 +14,7 @@ import cruuzApp from './Visuals/cruuzApp.png';
 /* animatronic eyes visual */
 import eyes from './Visuals/eyes.gif';
 import eyesWebpage from './Visuals/webpage.jpg';
-import eyesProto from './Visuals/eyesproto.gif';
+import pcbAssembled from './Visuals/PCB_Assembled.jpg';
 
 /* imports for format */
 import ProjectChunk from './projectchunk.js';
@@ -138,9 +138,9 @@ const personalProjects = [
     leftVisual: eyesWebpage,
     leftType: 'vertical',
     leftVisualSubtitle: 'Webserver from Microcontroller',
-    middleVisual: eyesProto,
+    middleVisual: pcbAssembled,
     middleType: 'horizontal',
-    middleVisualSubtitle: 'Prototyping the Blinking',
+    middleVisualSubtitle: 'Custom-Made PCB',
     rightVisual: eyes,
     rightType: 'vertical',
     rightVisualSubtitle: 'Eyes Tracking a Face',
