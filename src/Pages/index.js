@@ -1,8 +1,7 @@
 import React from 'react';
 import './style.css';
 import BottomBar from './Bottombar/bottombar.js';
-
-import Me from './Projects/Visuals/AbhiAldermanCropped.jpg';
+import meSquare from './Projects/Visuals/meSquare.jpg';
 
 const Home = () => {
   return (
@@ -19,7 +18,9 @@ const Home = () => {
           </p>
           <p>Check out my <a href="/projects">Projects</a> and <a href="/courseworks">Coursework!</a></p>
         </div>  
-        <img src={Me} className="profile" alt="Me"></img>
+        <div className="image">
+          <img src={meSquare} className="profile" alt="Me"></img>
+        </div>
       </div>   
       <BottomBar>
       </BottomBar>

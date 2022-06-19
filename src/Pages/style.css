@@ -28,27 +28,44 @@ html, body {
 }
 
 .home-grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 1fr;
-  text-align: center;
-  align-self: center;
-
+  display: flex;
+  
+  gap: 3rem;
   padding-block: 2rem;
-  width: min(95%, 70rem);
+  width: min(90%, 70rem);
   margin-inline: auto;
+
+  
+}
+
+@media only screen and (max-width: 1200px) {
+  .home-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-self: center;
+  
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+  }
+
+  .image {
+    align-items: center;
+    justify-self: center;
+  }
 }
 
 .profile{
   margin: auto;
-  width: 50%;
   padding: 10px;
+  width: 100%;
 }
 
-
-
-.profile{
-  height: 600px;
-  width: 300px;
+.image {
+  height: 50%;
+  width: 50%;
 }
+
 

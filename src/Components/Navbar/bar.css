@@ -40,7 +40,9 @@
     color: var(--header-gray);
 }
 
-.topBar{
+
+
+.navbar {
     background-color: var(--not-black);
-    
 }
+

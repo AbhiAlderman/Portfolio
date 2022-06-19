@@ -1,16 +1,25 @@
 import React from 'react';
 import './projects.css';
+
+/* benchmark visuals */
 import robot2 from './Visuals/robot2.gif';
 import robot3 from './Visuals/robot3.gif';
-
-import cruuz from './Visuals/cruuz.png';
-import cruuz_website from './Visuals/cruuz_website.JPG';
-import eyes from './Visuals/eyes.gif';
-import eyesWebpage from './Visuals/webpage.jpg';
 import toolpick from './Visuals/toolpick.gif';
 
+/* cruuz visuals */
+import cruuz from './Visuals/cruuz.png';
+import cruuz_website from './Visuals/cruuz_website.JPG';
+import cruuzApp from './Visuals/cruuzApp.png';
+
+/* animatronic eyes visual */
+import eyes from './Visuals/eyes.gif';
+import eyesWebpage from './Visuals/webpage.jpg';
+import eyesProto from './Visuals/eyesproto.gif';
+
+/* imports for format */
 import ProjectChunk from './projectchunk.js';
 import BottomBar from './../Bottombar/bottombar.js';
+
 
 
 
@@ -41,25 +50,26 @@ const Projects = () => {
         position = position at company if it exists
         technologies = technologies used in project
         leftvisual = picture at left (or top on mobile)
-        rightvisual = ^ but for right
+        leftType: the size/shape of visual
         leftvisualsubtitle = subheading under leftvisual
-        rightvisualsubtitle = ^ but for right
-        description = description of project*/
+        same for middle and right
+        description = description of project
+    */
 const industryProjects = [
   {
     name: 'Cruuz Inc.',
     position: 'Software Engineering Intern',
     technologies: 'Swift, React, Javascript, CSS, HTML, Git',
 
-    leftVisual: cruuz,
-    leftType: 'squareSmall',
-    leftVisualSubtitle: 'Cruuz Logo',
-    middleVisual: '',
-    middleType: '',
-    middleVisualSubtitle: '',
+    leftVisual: cruuzApp,
+    leftType: 'vertical',
+    leftVisualSubtitle: 'App Demo',
+    middleVisual: cruuz,
+    middleType: 'squareSmall',
+    middleVisualSubtitle: 'Logo',
     rightVisual: cruuz_website,
     rightType: 'vertical',
-    rightVisualSubtitle: 'In-App Demo',
+    rightVisualSubtitle: 'App Demo',
 
 
     description:'Cruuz Inc. is a startup focused on providing \n' + 
@@ -128,12 +138,12 @@ const personalProjects = [
     leftVisual: eyesWebpage,
     leftType: 'vertical',
     leftVisualSubtitle: 'Webserver from Microcontroller',
-    middleVisual: '',
-    middleType: '',
-    middleVisualSubtitle: '',
+    middleVisual: eyesProto,
+    middleType: 'horizontal',
+    middleVisualSubtitle: 'Prototyping the Blinking',
     rightVisual: eyes,
     rightType: 'vertical',
-    rightVisualSubtitle: 'Animatronic Eyes Tracking a Face',
+    rightVisualSubtitle: 'Eyes Tracking a Face',
 
     description: 'Created a pair of Animatronic Eyes with two other students. \n' +
                   'Eyes were modeled using TinkerCAD, the PCB was fully designed by us in KiCAD and manufactured in China, \n' +
