@@ -22,12 +22,21 @@ body {
 
 @media only screen and (max-width: 1200px) {
   .card-grid{
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  text-align: center;
+
+  }
+  .card{
+    background-color: var(--dark);
     margin: auto;
     width: 50%;
-    grid-template-columns: 1fr;
-    gap: 10px;
   }
-
+  .coursework{
+    width: auto;
+    margin: 0, auto
+  }
   
   
 }
