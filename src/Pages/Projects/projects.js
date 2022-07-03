@@ -11,10 +11,15 @@ import cruuz from './Visuals/cruuz.png';
 import cruuz_website from './Visuals/cruuz_website.JPG';
 import cruuzApp from './Visuals/cruuzApp.png';
 
-/* animatronic eyes visual */
+/* animatronic eyes visuals */
 import eyes from './Visuals/eyes.gif';
 import eyesWebpage from './Visuals/webpage.jpg';
 import pcbAssembled from './Visuals/PCB_Assembled.jpg';
+
+/* ribbon cutting robot visuals */
+import ribbonDemo from './Visuals/Ribbon-Robot.gif';
+import ribbonLift from './Visuals/dr4b.gif';
+import ribbonSausage from './Visuals/sausage.gif';
 
 /* imports for format */
 import ProjectChunk from './projectchunk.js';
@@ -36,8 +41,14 @@ const Projects = () => {
         {industryProjects.map(project => <ProjectChunk key={project.name} project={project} />)}
         <br></br>
       <h2 className="type">Relevant Personal Projects</h2>
+      <h3 className="position">Projects that showcase my current experience and skill</h3>
         <br></br>
         {personalProjects.map(project => <ProjectChunk key={project.name} project={project}/>)}
+        <br></br>
+      <h2 className="type">Old Projects</h2>
+      <h3 className="position">Projects that got me where I am today</h3>
+        <br></br>
+        {oldProjects.map(project => <ProjectChunk key={project.name} project={project}/>)}
         <br></br>
       <BottomBar></BottomBar>
     </div>
@@ -154,6 +165,33 @@ const personalProjects = [
                   'control the position of the servos accordingly. This made it seem like the eyes would "follow" a face as they moved around.',
     links: [['Github Repo', 'https://github.com/AbhiAlderman/Animatronic-Eyes']],
     id: 'animatronic'
+  }
+];
+
+const oldProjects = [
+  {
+    name: 'Ribbon-Cutting Robot',
+    position: '',
+    technologies: 'Arduino, C, C++, VEX Robotics',
+
+    leftVisual: ribbonDemo,
+    leftType: 'vertical',
+    leftVisualSubtitle: 'Showcase at Bay Area Science Festival',
+    middleVisual: ribbonSausage,
+    middleType: 'horizontal',
+    middleVisualSubtitle: 'Cutting Through a Sausage',
+    rightVisual: ribbonLift,
+    rightType: 'vertical',
+    rightVisualSubtitle: 'Prototyping a Blade',
+
+    description: 'In high school I was tasked with creating a robot that \n' +
+                  'was able to cut through the ribbon during an "opening ceremony" for the Bay Area Science Festival. \n' +
+                  'I came up with the design and created the program for controlling the robot, and had some help from Artur Neri and other \n' +
+                  'It used a simple 4-wheel drive \n' +
+                  'to traverse and a "double reverse 4 bar" to lift up a spinning, custom-made saw blade. \n' + 
+                  'I completed this project with the help of Artur Neri and some help from other robotics students. Overall a very fun project.',
+    links: [['Bay Area Science Festival Instagram Post', 'https://www.instagram.com/p/B4X4bLPhOIs/?utm_source=ig_web_copy_link']],
+    id: 'ribbonCutter'
   }
 ];
 export default Projects;
