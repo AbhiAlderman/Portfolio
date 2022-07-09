@@ -21,6 +21,15 @@ import ribbonDemo from './Visuals/Ribbon-Robot.gif';
 import ribbonLift from './Visuals/dr4b.gif';
 import ribbonSausage from './Visuals/sausage.gif';
 
+/* discord visuals */
+import discordCode from './Visuals/discordCode.JPG';
+import discordDash from './Visuals/discordDash.JPG';
+import discordDemo from './Visuals/discordDemo.JPG';
+/* portfolio visuals */
+import homePage from './Visuals/homePage.JPG';
+import portfolioCode from './Visuals/portfolioCode.JPG';
+import portfolioNetlify from './Visuals/portfolioNetlify.JPG';
+
 /* imports for format */
 import ProjectChunk from './projectchunk.js';
 import BottomBar from './../Bottombar/bottombar.js';
@@ -120,19 +129,41 @@ const industryProjects = [
 
 const personalProjects = [
   {
+    name: 'Discord Music Bot',
+    position: '',
+    technologies: 'Python, Amazon Web Services (AWS), Discord API, Git, Linux',
+
+    leftVisual: discordCode,
+    leftType: 'vertical',
+    leftVisualSubtitle: 'Example code snippet',
+    middleVisual: discordDemo,
+    middleType: 'horizontal',
+    middleVisualSubtitle: 'Demo of the bot joining and running in a voicecall',
+    rightVisual: discordDash,
+    rightType: 'vertical',
+    rightVisualSubtitle: 'Discord Bot Dashboard',
+
+    description: 'I created a Discord Bot capable of searching and playing music from Youtube in voice channels. \n' +
+                  'Supports joining and leaving voice channels, playing youtube videos from search requests or urls, \n' +
+                  'adding and removing songs in a queue, skipping songs, pausing and removing songs, leaving after inactivity, and more.\n' +
+                  'Using Amazon Web Services (AWS) to remain online and functioning 24/7.',
+    links: [['Github Repo', 'https://github.com/AbhiAlderman/Discord-Music-Bot']],
+    id: 'musicBot'
+  },
+  {
     name: 'Personal Website',
     position: '',
     technologies: 'React, Javascript, CSS, HTML, Git',
 
-    leftVisual: '',
-    leftType: '',
-    leftVisualSubtitle: '',
-    middleVisual: '',
-    middleType: '',
-    middleVisualSubtitle: '',
-    rightVisual: '',
-    rightType: '',
-    rightVisualSubtitle: '',
+    leftVisual: portfolioCode,
+    leftType: 'vertical',
+    leftVisualSubtitle: 'Example Code',
+    middleVisual: homePage,
+    middleType: 'horizontal',
+    middleVisualSubtitle: 'The homepage',
+    rightVisual: portfolioNetlify,
+    rightType: 'vertical',
+    rightVisualSubtitle: 'Using Netlify to Host Site',
 
     description: 'I created this website in Summer 2022 to showcase my skills in Software. \n' +
                   'This was my first relatively large front-end project. I learned everything I needed to know from youtube, \n' +
