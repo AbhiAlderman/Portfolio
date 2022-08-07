@@ -45,7 +45,7 @@ const Projects = () => {
       <br></br>
       <br></br>
       <h2 className="type"> Industry Experience</h2>
-      <h3 className="position">Projects I've done in Industry</h3>
+      <h3 className="position">Relevant Projects I've done in Industry</h3>
         <br></br>
         {industryProjects.map(project => <ProjectChunk key={project.name} project={project} />)}
         <br></br>
@@ -76,31 +76,6 @@ const Projects = () => {
         description = description of project
     */
 const industryProjects = [
-  {
-    name: 'Cruuz Inc.',
-    position: 'Software Engineering Intern',
-    technologies: 'Swift, React, Javascript, CSS, HTML, Git',
-
-    leftVisual: cruuzApp,
-    leftType: 'vertical',
-    leftVisualSubtitle: 'App Demo',
-    middleVisual: cruuz,
-    middleType: 'squareSmall',
-    middleVisualSubtitle: 'Logo',
-    rightVisual: cruuz_website,
-    rightType: 'vertical',
-    rightVisualSubtitle: 'App Demo',
-
-
-    description:'Cruuz Inc. is a startup focused on providing \n' + 
-              'haircut and beauty appointment booking through an all-encompassing app. Users are able \n' + 
-              'to use the app to book an appointment from multiple salons in the area, much like \n' + 
-              'DoorDash or UberEats. I am currently working as a Software Engineering Intern \n' + 
-              'here. My task is focused on updating the main website , and developing a pintrest-like \n' + 
-              'gallery for the app.',
-    links: [['Company Website', 'https://www.cruuzinc.com/']],
-    id: 'cruuz'
-  },
   {
     name: 'Benchmark Electronics',
     position: 'Automation Engineering Intern',
