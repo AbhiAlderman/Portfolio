@@ -6,10 +6,7 @@ import robot2 from './Visuals/robot2.gif';
 import robot3 from './Visuals/robot3.gif';
 import toolpick from './Visuals/toolpick.gif';
 
-/* cruuz visuals */
-import cruuz from './Visuals/cruuz.png';
-import cruuz_website from './Visuals/cruuz_website.JPG';
-import cruuzApp from './Visuals/cruuzApp.png';
+
 
 /* animatronic eyes visuals */
 import eyes from './Visuals/eyes.gif';
