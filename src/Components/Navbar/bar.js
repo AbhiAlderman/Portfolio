@@ -15,6 +15,7 @@ const Bar = ()=> {
         <Nav.Link href="/" className="header">Home</Nav.Link>
         <Nav.Link href="/projects" className="header">Projects</Nav.Link>
         <Nav.Link href="/coursework" className="header">Coursework</Nav.Link>
+        <Nav.Link href="/AbhiAlderman_Resume.pdf" className="header">Resume</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Container>

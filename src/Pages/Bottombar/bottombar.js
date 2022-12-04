@@ -8,7 +8,6 @@ export default function bottombar() {
         <div>   
             <a href="https://github.com/abhialderman" className="icon"><FontAwesomeIcon icon={faGithub} transform="left-20" /></a>
             <a href="https://www.linkedin.com/in/abhialderman/" className="icon"><FontAwesomeIcon icon={faLinkedin} /></a>
-            <a href="./AbhiAlderman_Resume.pdf" className="icon" ><FontAwesomeIcon icon={faFileAlt} transform="right-20"/></a>
         </div>
     )
 }

@@ -19,13 +19,13 @@ import ribbonLift from './Visuals/dr4b.gif';
 import ribbonSausage from './Visuals/sausage.gif';
 
 /* discord visuals */
-import discordCode from './Visuals/discordCode.JPG';
-import discordDash from './Visuals/discordDash.JPG';
 import discordDemo from './Visuals/discordDemo.JPG';
-/* portfolio visuals */
-import homePage from './Visuals/homePage.JPG';
-import portfolioCode from './Visuals/portfolioCode.JPG';
-import portfolioNetlify from './Visuals/portfolioNetlify.JPG';
+
+/* door opener visuals */
+import doorCircuit from './Visuals/doorCircuit.jpg';
+import doorOpener from './Visuals/doorOpener.jpg';
+import doorVid from './Visuals/doorVid.gif';
+
 
 /* imports for format */
 import ProjectChunk from './projectchunk.js';
@@ -101,48 +101,29 @@ const industryProjects = [
 
 const personalProjects = [
   {
-    name: 'Discord Music Bot',
+    name: 'Front Door Automation',
     position: '',
-    technologies: 'Python, Amazon Web Services (AWS), Discord API, Git, Linux',
+    technologies: 'Arduino, C++, Raspberry Pi, Linux, Git',
 
-    leftVisual: discordCode,
+    leftVisual: doorCircuit,
     leftType: 'vertical',
-    leftVisualSubtitle: 'Example code snippet',
-    middleVisual: discordDemo,
+    leftVisualSubtitle: 'Prototype Circuit to Handle Control Logic',
+    middleVisual: doorVid,
     middleType: 'horizontal',
-    middleVisualSubtitle: 'Demo of the bot joining and running in a voicecall',
-    rightVisual: discordDash,
+    middleVisualSubtitle: 'Demonstration',
+    rightVisual: doorOpener,
     rightType: 'vertical',
-    rightVisualSubtitle: 'Discord Bot Dashboard',
+    rightVisualSubtitle: 'Mechanism for Opening the Door',
 
-    description: 'I created a Discord Bot capable of searching and playing music from Youtube in voice channels. \n' +
-                  'Supports joining and leaving voice channels, playing youtube videos from search requests or urls, \n' +
-                  'adding and removing songs in a queue, skipping songs, pausing and removing songs, leaving after inactivity, and more.\n' +
-                  'Using Amazon Web Services (AWS) to remain online and functioning 24/7.',
-    links: [['Github Repo', 'https://github.com/AbhiAlderman/Discord-Music-Bot'], ['Invite the Bot to your Discord Server!', 'https://discord.com/api/oauth2/authorize?client_id=994480812244357130&permissions=8693812224&scope=bot']],
-    id: 'musicBot'
-  },
-  {
-    name: 'Personal Website',
-    position: '',
-    technologies: 'React, Javascript, CSS, HTML, Git',
-
-    leftVisual: portfolioCode,
-    leftType: 'vertical',
-    leftVisualSubtitle: 'Example Code',
-    middleVisual: homePage,
-    middleType: 'horizontal',
-    middleVisualSubtitle: 'The homepage',
-    rightVisual: portfolioNetlify,
-    rightType: 'vertical',
-    rightVisualSubtitle: 'Using Netlify to Host Site',
-
-    description: 'I created this website in Summer 2022 to showcase my skills in Software. \n' +
-                  'This was my first relatively large front-end project. I learned everything I needed to know from youtube, \n' +
-                  'stack overflow, documentation, and friends. It took approximately a week for me to finish the rough draft \n' +
-                  'of this site, and I have been continously updating it as I see fit from there.',
-    links: [['Github Repo', 'https://github.com/AbhiAlderman/Portfolio']],
-    id: 'portfolio'
+    description: 'In Fall 2021, the front-door of my co-op featured a door scanner that opened the door automatically when scanned. \n' +
+                  'However, anyone with a UC Berkeley student ID was able to enter the house, so the project was cancelled. \n' +
+                  ' In Fall 2022, as the house-appointed "Network/Hardware Manager", I decided to revisit this project. \n' +
+                  'My co-manager, Benedict Taguinod, and I re-implemented this project and were able to successfully enable filtering. \n' +
+                  'Residents who decide to opt-in are able to send us the 6-digit code found on the back of the card to give them access. \n' +
+                  'Currently, codes are saved locally on the arduino. In the future, we plan on using a raspberry pi to remotely edit the \n' +
+                  'students who have access without having to re-upload code on the arduino.',
+    links: [['Github Repo', 'https://github.com/AbhiAlderman/RFID_Access_Controller']],
+    id: 'door'
   },
   {
     name: 'Animatronic Eyes',
@@ -159,23 +140,51 @@ const personalProjects = [
     rightType: 'vertical',
     rightVisualSubtitle: 'Eyes Tracking a Face',
 
-    description: 'Created a pair of Animatronic Eyes with two other students. \n' +
-                  'Eyes were modeled using TinkerCAD, the PCB was fully designed by us in KiCAD and manufactured in China, \n' +
+    description: 'In Spring 2022 I created a pair of Animatronic Eyes with Andrew Wang and Cindy Lin. \n' +
+                  'The eyes were modeled using TinkerCAD, the PCB was fully designed by us in KiCAD and manufactured in China, \n' +
                   'and the servos were controlled by an ESP32-CAM microcontroller. \n' +
-                  'I programmed the microcontroller in C using the Arduino program, and was able to succesfully get a Webserver running \n' +
+                  'I programmed the microcontroller in C++ using the Arduino program, and was able to succesfully get a Webserver running \n' +
                   'by using the microcontroller as an access point. The webserver allowed me to see what the camera saw and fine-tune the \n' +
                   'facial recognition and tracking. The camera was able to locate the position of a face, and I used this position to \n' +
-                  'control the position of the servos accordingly. This made it seem like the eyes would "follow" a face as they moved around.',
+                  'control the position of the servos accordingly. This allowed the eyes to follow a face as they moved around.',
     links: [['Github Repo', 'https://github.com/AbhiAlderman/Animatronic-Eyes']],
     id: 'animatronic'
-  }
+  },
+  {
+    name: 'Discord Music Bot',
+    position: '',
+    technologies: 'Python, Amazon Web Services (AWS), Discord API, Git, Linux',
+
+    middleVisual: discordDemo,
+    middleType: 'horizontal',
+    middleVisualSubtitle: 'Demo of the bot joining and running in a voicecall',
+
+    description: 'I created a Discord Bot capable of searching and playing music from Youtube in voice channels. \n' +
+                  'Supports joining and leaving voice channels, playing Youtube videos from search requests or urls, \n' +
+                  'adding and removing songs in a queue, skipping songs, pausing and removing songs, leaving after inactivity, and more.\n' +
+                  'Uses Amazon Web Services (AWS) to remain online and functioning 24/7.',
+    links: [['Github Repo', 'https://github.com/AbhiAlderman/Discord-Music-Bot'], ['Invite the Bot to your Discord Server!', 'https://discord.com/api/oauth2/authorize?client_id=994480812244357130&permissions=8693812224&scope=bot']],
+    id: 'musicBot'
+  },
+  {
+    name: 'Personal Website',
+    position: '',
+    technologies: 'React, Javascript, CSS, HTML, Git',
+
+    description: 'I created this website in Summer 2022 to showcase my projects and experience. \n' +
+                  'This was my first relatively large front-end project. I learned everything I needed to know from documentation, \n' +
+                  'stack overflow, youtube, and friends. I continue to update this site as I complete new projects, \n' +
+                  'and hope to revamp it with a new, polished look as soon as I get the chance.',
+    links: [['Github Repo', 'https://github.com/AbhiAlderman/Portfolio']],
+    id: 'portfolio'
+  },
 ];
 
 const oldProjects = [
   {
     name: 'Ribbon-Cutting Robot',
     position: '',
-    technologies: 'Arduino, C, C++, VEX Robotics',
+    technologies: 'VEX Robotics, ROBOTC for VEX Robotics',
 
     leftVisual: ribbonDemo,
     leftType: 'vertical',
@@ -189,10 +198,10 @@ const oldProjects = [
 
     description: 'In high school I was tasked with creating a robot that \n' +
                   'was able to cut through the ribbon during an "opening ceremony" for the Bay Area Science Festival. \n' +
-                  'I came up with the design and created the program for controlling the robot, and had some help from Artur Neri and other \n' +
+                  'I came up with the structural design and created the program for controlling the robot. \n' +
                   'It used a simple 4-wheel drive \n' +
-                  'to traverse and a "double reverse 4 bar" to lift up a spinning, custom-made saw blade. \n' + 
-                  'I completed this project with the help of Artur Neri and some help from other robotics students. Overall a very fun project.',
+                  'to traverse and a "double reverse 4 bar" to lift up a spinning, custom manufactured saw blade. \n' + 
+                  'I completed this project with Artur Neri and some help from other robotics students. Overall a very fun project.',
     links: [['Bay Area Science Festival Instagram Post', 'https://www.instagram.com/p/B4X4bLPhOIs/?utm_source=ig_web_copy_link']],
     id: 'ribbonCutter'
   }

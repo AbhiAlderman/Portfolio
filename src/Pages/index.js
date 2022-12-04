@@ -13,9 +13,6 @@ const Home = () => {
           <p>I'm Robert "Abhi" Alderman, a Junior at UC Berkeley majoring in Electrical Engineering and Computer Science.
             My interests include Software Engineering, Robotics, Mechatronics, Electrical Engineering, and Computer Vision.
           </p>
-          <p>
-            I'm currently a Lab ASE for EECS 16A, and an incoming Salesforce Software Engineering Intern in 2023.
-          </p>
           <p>Check out my <a href="/projects">Projects</a> and <a href="/courseworks">Coursework!</a></p>
         </div>  
         <div className="image">

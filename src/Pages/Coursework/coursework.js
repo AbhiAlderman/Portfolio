@@ -19,6 +19,14 @@ const Coursework = () => {
 
 const courseCards = [
   {
+    name: 'CS 161',
+    title: 'CyberSecurity',
+    skills: 'C, GOLang, SQL, Javascript, CyberSecurity',
+    projects: [],
+    date: 'Fall 2022',
+    url: 'https://fa22.cs161.org/'
+  },
+  {
     name: 'CS 170',
     title: 'Efficient Algorithms and Intractable Problems',
     skills: 'Python, Dynamic Programming, Algorithm Design, Runtimes, Proofs',
@@ -98,13 +106,5 @@ const courseCards = [
     date: 'Spring 2021',
     url: 'https://inst.eecs.berkeley.edu/~ee16a/sp21/'
   },
-  {
-    name: 'CS 195',
-    title: 'Social Implications of Computer Technology',
-    skills: 'Ethics, Education',
-    projects: [],
-    date: 'Spring 2022',
-    url: 'https://inst.eecs.berkeley.edu/~cs195/sp22/'
-  }
 ]
 export default Coursework;
