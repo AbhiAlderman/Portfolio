@@ -163,7 +163,7 @@ const personalProjects = [
                   'Supports joining and leaving voice channels, playing Youtube videos from search requests or urls, \n' +
                   'adding and removing songs in a queue, skipping songs, pausing and removing songs, leaving after inactivity, and more.\n' +
                   'Uses Amazon Web Services (AWS) to remain online and functioning 24/7.',
-    links: [['Github Repo', 'https://github.com/AbhiAlderman/Discord-Music-Bot'], ['Invite the Bot to your Discord Server!', 'https://discord.com/api/oauth2/authorize?client_id=994480812244357130&permissions=8693812224&scope=bot']],
+    links: [['Github Repo', 'https://github.com/AbhiAlderman/Discord-Music-Bot']],
     id: 'musicBot'
   },
   {
