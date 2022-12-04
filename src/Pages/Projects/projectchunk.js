@@ -170,7 +170,7 @@ export default function projectLayout(props) {
             }
             return link
         });
-        links = links.reduce((acc, curr) => [acc, ', ', curr]);
+        links = links.reduce((acc, curr) => [acc, '      ', curr]);
         
     }
 

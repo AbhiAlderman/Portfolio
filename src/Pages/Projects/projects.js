@@ -26,6 +26,15 @@ import doorCircuit from './Visuals/doorCircuit.jpg';
 import doorOpener from './Visuals/doorOpener.jpg';
 import doorVid from './Visuals/doorVid.gif';
 
+/* FRC visuals */
+import robotHoops from './Visuals/robotHoops.gif';
+import robotPOV from './Visuals/robotPOV.gif';
+import robot2020 from './Visuals/robot2020.JPG';
+import robotBall from './Visuals/robotBall.gif';
+import robotBox from './Visuals/robotBox.gif';
+import robot2019 from './Visuals/robot2019.jpg';
+import robotLow from './Visuals/robotLow.gif';
+import robotHigh from './Visuals/robotHigh.gif'
 
 /* imports for format */
 import ProjectChunk from './projectchunk.js';
@@ -204,7 +213,66 @@ const oldProjects = [
                   'I completed this project with Artur Neri and some help from other robotics students. Overall a very fun project.',
     links: [['Bay Area Science Festival Instagram Post', 'https://www.instagram.com/p/B4X4bLPhOIs/?utm_source=ig_web_copy_link']],
     id: 'ribbonCutter'
-  }
+  },
+  {
+    name: 'FIRST Robotics Competition 2020',
+    position: '',
+    technologies: 'Java, FIRST Robotics',
+
+    leftVisual: robotHoops,
+    leftType: 'squareSmall',
+    leftVisualSubtitle: 'Shooting into Basketball Hoop',
+    middleVisual: robotPOV,
+    middleType: 'squareBig',
+    middleVisualSubtitle: 'Shooting Mechanism',
+    rightVisual: robot2020,
+    rightType: 'squareSmall',
+    rightVisualSubtitle: 'During LA Competition',
+
+    description: 'Robot used in the 2020 FIRST Robotics competition by Ygnacio Valley High School. \n' +
+                  'During this season, I was the President and Lead Programmer for the club. Robot was capable of \n' +
+                  'grabbing, shooting, auto-aiming, and was equipped with a Swerve Drive.',
+    links: [['Github Repo', 'https://github.com/AbhiAlderman/Ygnacio-Valley-High-School-FRC-2020-Code'], ['About FIRST', 'https://www.firstinspires.org/robotics/frc']],
+    id: 'FRC2020'
+  },
+  {
+    name: 'FIRST Robotics Competition 2019',
+    position: '',
+    technologies: 'Java, FIRST Robotics',
+
+    leftVisual: robot2019,
+    leftType: 'horizontal',
+    leftVisualSubtitle: 'During Davis Competition',
+    rightVisual: robotBall,
+    rightType: 'horizontal',
+    rightVisualSubtitle: 'Robot Demo',
+
+    description: 'Robot used in the 2019 FIRST Robotics competition by Ygnacio Valley High School. \n' +
+                  'During this season, I was the Vice-President and Lead Programmer for the club. Robot was capable of \n' +
+                  'grabbing, lifting, shooting, and was equipped with a ramp that could be deployed for other Robots to use.',
+    links: [['Github Repo', 'https://github.com/AbhiAlderman/Ygnacio-Valley-High-School-FRC-2019-Code'], ['About FIRST', 'https://www.firstinspires.org/robotics/frc']],
+    id: 'FRC2020'
+  },
+  {
+    name: 'FIRST Robotics Competition 2018',
+    position: '',
+    technologies: 'Java, FIRST Robotics',
+    leftVisual: robotLow,
+    leftType: 'squareSmall',
+    leftVisualSubtitle: 'Grabbing Mechanism',
+    middleVisual: robotBox,
+    middleType: 'horizontal',
+    middleVisualSubtitle: 'Robot Demo',
+    rightVisual: robotHigh,
+    rightType: 'squareSmall',
+    rightVisualSubtitle: 'Shooting Mechanism',
+
+    description: 'Robot used in the 2018 FIRST Robotics competition by Ygnacio Valley High School. \n' +
+                  'This was our first year as a club. During this season I was the Lead Programmer. \n' +
+                  'Robot was capable of grabbing, lifting, and shooting boxes. This was also my first programming project ever!',
+    links: [['Github Repo', 'https://github.com/AbhiAlderman/Ygnacio-Valley-High-School-FRC-2018-Code'], ['About FIRST', 'https://www.firstinspires.org/robotics/frc']],
+    id: 'FRC2018'
+  },
 ];
 export default Projects;
 
