@@ -12,10 +12,6 @@ const Home = () => {
           <h2 className="position">UC Berkeley '24 Electrical Engineering and Computer Science</h2>
           <p>I'm Robert "Abhi" Alderman, a Junior at UC Berkeley majoring in Electrical Engineering and Computer Science.
             My interests include Software Engineering, Robotics, Mechatronics, Electrical Engineering, and Computer Vision.
-            
-          </p>
-          <p>
-            
           </p>
           <p>Check out my <a href="/projects">Projects</a> and <a href="/courseworks">Coursework!</a></p>
         </div>  
