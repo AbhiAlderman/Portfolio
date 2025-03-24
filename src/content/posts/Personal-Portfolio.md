@@ -1,8 +1,8 @@
 ---
-cover: "../Visuals/Portfolio/homePage.JPG"
+cover: "../Visuals/Portfolio/frontpage.png"
 coverAlt: ""
 description: Online Portfolio to view my past projects and experience.
-pubDate: 2022-01-01 00:00:00
+order: 6
 slug: personal-portfolio
 title: Personal Portfolio
 tags:
@@ -11,6 +11,4 @@ tags:
 - CSS
 - React
 - Astro
-- Bootstrap
-- Tailwind
 ---

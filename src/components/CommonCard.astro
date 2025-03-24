@@ -9,35 +9,46 @@ interface Props {
 const { post } = Astro.props;
 ---
 
-<div
-  class="card shadow-xl rounded-xl overflow-hidden transition-transform duration-500 hover:-translate-y-1 hover:scale-105"
->
-  <a href={`/posts/${post.id}/`}>
-    <figure>
-      {/* Check if the image format is GIF */}
+<div class="card shadow-xl rounded-xl overflow-hidden transition-transform duration-500 hover:-translate-y-1 hover:scale-105 
+            grid grid-rows-[auto_minmax(0,1fr)] h-full">
+  <a href={`/posts/${post.id}/`} class="contents">
+    <figure class="flex-1 relative aspect-video"> {/* 16:9 aspect ratio */}
       {post.data.cover.format === 'gif' ? (
         <img
           src={post.data.cover.src}
           alt={post.data.coverAlt}
-          class="w-full h-full object-cover"
+          class="h-full w-full object-cover"
           width={post.data.cover.width}
           height={post.data.cover.height}
+          loading="lazy"
         />
       ) : (
         <OptimizedCover
           src={post.data.cover}
           alt={post.data.coverAlt}
+          class="h-full w-full object-cover"
         />
       )}
     </figure>
-    <div class="card-body">
-      <div class="flex items-center gap-1 text-xs">
-        {
-          post.data.tags?.map(tag => <span class="badge badge-outline">{tag}</span>)
-        } 
+    <div class="card-body p-4 flex flex-col gap-2">
+      <div class="flex flex-wrap items-center gap-1 text-xs">
+        {post.data.tags?.map(tag => 
+          <span class="badge badge-outline">{tag}</span>
+        )}
       </div>
-      <h3 class="card-title">{post.data.title}</h3>
-      <h4 class="card-desc">{post.data.description}</h4>
+      <h3 class="card-title text-base line-clamp-2">{post.data.title}</h3>
+      <h4 class="card-desc text-sm line-clamp-3">{post.data.description}</h4>
     </div>
   </a>
 </div>
+<style is:global>
+  .card {
+    container-type: inline-size;
+  }
+  .card-title {
+    @apply line-clamp-2;
+  }
+  .card-desc {
+    @apply line-clamp-3;
+  }
+</style>

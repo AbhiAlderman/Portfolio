@@ -1,0 +1,55 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import OptimizedCover from "../../components/OptimizedPicture.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: post,
+  }));
+}
+
+const post = Astro.props;
+const { Content } = await render(post);
+---
+
+<BaseLayout title={post.data.title} description={post.data.description}>
+  <main>
+    <article class="prose mx-auto dark:prose-invert">
+      <div class="not-prose mb-8 text-center">
+        <h1 class="text-1.8xl font-bold tracking-tight md:text-2xl lg:text-3xl">
+          {post.data.title}
+        </h1>
+      <div class="mt-4 max-w-4xl mx-auto">
+        {post.data.cover.format === 'gif' ? (
+        <img
+          src={post.data.cover.src}
+          alt={post.data.coverAlt}
+          class="w-full h-full object-cover"
+          width={post.data.cover.width}
+          height={post.data.cover.height}
+        />
+      ) : (
+        <OptimizedCover
+          src={post.data.cover}
+          alt={post.data.coverAlt}
+        />
+      )}
+      </div>
+      <div>
+        <Content />
+      </div>
+      <div class="mt-4 flex flex-wrap justify-center gap-2 prose-a:no-underline">
+        {
+          post.data.tags.map((tag) => (
+            <span class="badge badge-outline badge-md">
+              <a href={`/tags/${tag}/1/`}>{tag}</a>
+            </span>
+          ))
+        }
+      </div>
+    </article>
+  </main>
+</BaseLayout>

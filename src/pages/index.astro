@@ -5,15 +5,15 @@ import Card from "../components/CommonCard.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
 const allPosts = await getCollection("posts");
-allPosts.sort(
-  (a, b) =>
-    new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
-);
+allPosts.sort((a, b) => b.data.order - a.data.order);
 ---
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <div class="grid grid-cols-1">
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-      {allPosts.map((post) => <Card post={post} />)}
+    <div class="mb-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
+      {allPosts.slice(0,2).map((post) => <Card post={post} />)}
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
+      {allPosts.slice(2).map((post) => <Card post={post} />)}
     </div>
   </div>
 </BaseLayout>

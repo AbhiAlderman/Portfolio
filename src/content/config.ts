@@ -1,12 +1,11 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
-import { boolean } from "astro:schema";
 
 const posts = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/posts/" }),
   schema: ({ image }) => z.object({
     title: z.string(),
-    pubDate: z.date(),
+    order: z.number(),
     description: z.string(),
     cover: image(),
     coverAlt: z.string(),
