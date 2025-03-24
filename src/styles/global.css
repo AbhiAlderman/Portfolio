@@ -1,0 +1,13 @@
+@layer components {
+    .card {
+      break-inside: avoid;
+    }
+    .card-title {
+      word-break: break-word;
+    }
+    .card-desc {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }

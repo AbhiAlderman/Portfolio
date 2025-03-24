@@ -1,0 +1,43 @@
+---
+import type { CollectionEntry } from "astro:content";
+import OptimizedCover from "../components/OptimizedPicture.astro";
+
+interface Props {
+  post: CollectionEntry<"posts">;
+}
+
+const { post } = Astro.props;
+---
+
+<div
+  class="card shadow-xl rounded-xl overflow-hidden transition-transform duration-500 hover:-translate-y-1 hover:scale-105"
+>
+  <a href={`/posts/${post.id}/`}>
+    <figure>
+      {/* Check if the image format is GIF */}
+      {post.data.cover.format === 'gif' ? (
+        <img
+          src={post.data.cover.src}
+          alt={post.data.coverAlt}
+          class="w-full h-full object-cover"
+          width={post.data.cover.width}
+          height={post.data.cover.height}
+        />
+      ) : (
+        <OptimizedCover
+          src={post.data.cover}
+          alt={post.data.coverAlt}
+        />
+      )}
+    </figure>
+    <div class="card-body">
+      <div class="flex items-center gap-1 text-xs">
+        {
+          post.data.tags?.map(tag => <span class="badge badge-outline">{tag}</span>)
+        } 
+      </div>
+      <h3 class="card-title">{post.data.title}</h3>
+      <h4 class="card-desc">{post.data.description}</h4>
+    </div>
+  </a>
+</div>

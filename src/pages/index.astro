@@ -1,11 +1,19 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/CommonCard.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const allPosts = await getCollection("posts");
+allPosts.sort(
+  (a, b) =>
+    new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
+);
 ---
-
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <div class="grid grid-cols-1">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {allPosts.map((post) => <Card post={post} />)}
+    </div>
+  </div>
+</BaseLayout>
