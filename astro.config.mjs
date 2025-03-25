@@ -4,6 +4,7 @@ import mdx from "@astrojs/mdx";
 
 import sitemap from "@astrojs/sitemap";
 import { remarkModifiedTime } from "./src/utils/remark-modified-time.mjs";
+import rehypeRaw from 'rehype-raw';
 import partytown from "@astrojs/partytown";
 import pagefind from "astro-pagefind";
 import tailwindcss from "@tailwindcss/vite";
@@ -33,8 +34,10 @@ export default defineConfig({
   },
 
   markdown: {
+    rehypePlugins: [rehypeRaw],
     remarkPlugins: [remarkModifiedTime],
   },
+
   integrations: [
     mdx(),
     sitemap(),

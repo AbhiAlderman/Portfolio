@@ -38,9 +38,6 @@ const { Content } = await render(post);
         />
       )}
       </div>
-      <div>
-        <Content />
-      </div>
       <div class="mt-4 flex flex-wrap justify-center gap-2 prose-a:no-underline">
         {
           post.data.tags.map((tag) => (
@@ -50,6 +47,19 @@ const { Content } = await render(post);
           ))
         }
       </div>
+      <div class="mt-4 justify-center markdown-content" id="post-content">
+        <Content />
+      </div>
     </article>
   </main>
 </BaseLayout>
+
+<style is:global>
+  #post-content img {
+    display: block !important;
+    margin: 0 auto !important;
+    max-width: 80%;
+    height: auto;
+    padding: 20px 0;
+  }
+</style>
