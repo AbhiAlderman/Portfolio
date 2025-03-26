@@ -1,8 +1,15 @@
 ---
 import { Picture } from "astro:assets";
 
-interface Props {
+interface ImageData {
   src: string;
+  height: number;
+  width: number;
+  format: "avif" | "png" | "webp" | "jpeg" | "jpg" | "svg" | "tiff" | "gif";
+}
+
+interface Props {
+  src: string | ImageData;
   alt: string;
   widths?: number[];
   sizes?: string;
@@ -23,10 +30,12 @@ const {
   fallbackFormat = "avif",
   class: className = "mx-auto w-full max-w-full object-cover"
 } = Astro.props;
+
+const imageUrl = typeof src === 'object' ? src.src : src;
 ---
 
 <Picture
-  src={src}
+  src={imageUrl}
   alt={alt}
   widths={widths}
   sizes={sizes}
