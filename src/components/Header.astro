@@ -1,9 +1,10 @@
 ---
 import Link from "../components/Links.astro";
+import { SocialLinks } from "../consts";
 import { SITE_TITLE, DARK_THEME, LIGHT_THEME } from "../consts";
 ---
 
-<header class="z-50 flex w-full flex-wrap py-7 md:flex-nowrap md:justify-start">
+<header class="z-50 flex w-full flex-wrap py-10 min-h-28 gap-x-8 md:flex-nowrap md:justify-start">
   <nav
     class="relative mx-auto flex w-full max-w-7xl basis-full flex-wrap items-center px-4"
     aria-label="Global"
@@ -19,7 +20,21 @@ import { SITE_TITLE, DARK_THEME, LIGHT_THEME } from "../consts";
     </div>
 
     <div class="ms-auto flex items-center gap-x-2 py-1">
-      <!-- header components here -->
+      {
+        SocialLinks.map((link) => (
+          <button
+            type="button"
+            class="relative inline-flex h-12 w-12 items-center gap-x-2 px-4 py-3 disabled:pointer-events-none disabled:opacity-50"
+          >
+            <a
+              href={link.href}
+              class="absolute inset-0 z-10"
+              aria-label={link.label}
+            />
+            <i class={link.icon + " icon-base"} />
+          </button>
+        ))
+      }
     </div>
       </div>
 
@@ -32,9 +47,9 @@ import { SITE_TITLE, DARK_THEME, LIGHT_THEME } from "../consts";
           value={DARK_THEME}
         />
         <!-- sun icon -->
-        <i class="icon-base swap-off icon-[tabler--sun-filled]"></i>
+        <i class="icon-base swap-off icon-[tabler--moon-filled]"></i>
         <!-- moon icon -->
-        <i class="icon-base swap-on icon-[tabler--moon-filled]"></i>
+        <i class="icon-base swap-on icon-[tabler--sun-filled]"></i>
       </label>
     </div>
   </nav>

@@ -3,7 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import OptimizedCover from "../components/OptimizedPicture.astro";
 
 interface Props {
-  post: CollectionEntry<"posts">;
+  post: CollectionEntry<"projects">;
 }
 
 const { post } = Astro.props;
@@ -11,7 +11,7 @@ const { post } = Astro.props;
 
 <div class="card shadow-xl rounded-xl overflow-hidden transition-transform duration-500 hover:-translate-y-1 hover:scale-105 
             grid grid-rows-[auto_minmax(0,1fr)] h-full">
-  <a href={`/posts/${post.id}/`} class="contents">
+  <a href={`/projects/${post.id}/`} class="contents">
     <figure class="flex-1 relative aspect-video"> {/* 16:9 aspect ratio */}
       {post.data.cover.format === 'gif' ? (
         <img
