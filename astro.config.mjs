@@ -9,11 +9,14 @@ import partytown from "@astrojs/partytown";
 import pagefind from "astro-pagefind";
 import tailwindcss from "@tailwindcss/vite";
 
+import netlify from "@astrojs/netlify";
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
   site: "https://example.com",
   trailingSlash: "always",
 
@@ -50,4 +53,6 @@ export default defineConfig({
       },
     }),
   ],
+
+  adapter: netlify(),
 });
