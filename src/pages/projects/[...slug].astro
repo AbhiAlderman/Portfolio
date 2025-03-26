@@ -23,20 +23,31 @@ const { Content } = await render(post);
           {post.data.title}
         </h1>
       <div class="mt-4 max-w-4xl mx-auto">
-        {post.data.cover.format === 'gif' ? (
         <img
           src={post.data.cover.src}
           alt={post.data.coverAlt}
-          class="w-full h-full object-cover"
+          class="h-full w-full object-cover"
           width={post.data.cover.width}
           height={post.data.cover.height}
+          loading="lazy"
+        />
+      <!-- 
+      {post.data.cover.format === 'gif' ? (
+        <img
+          src={post.data.cover.src}
+          alt={post.data.coverAlt}
+          class="h-full w-full object-cover"
+          width={post.data.cover.width}
+          height={post.data.cover.height}
+          loading="lazy"
         />
       ) : (
         <OptimizedCover
-          src={post.data.cover}
+          src={post.data.cover.src}
           alt={post.data.coverAlt}
+          class="h-full w-full object-cover"
         />
-      )}
+      )}-->
       </div>
       <div class="mt-4 flex flex-wrap justify-center gap-2 prose-a:no-underline">
         {

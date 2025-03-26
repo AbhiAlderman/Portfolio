@@ -1,5 +1,5 @@
 ---
-cover: "../Visuals/Discord-Chatbot/discordDemo.JPG"
+cover: "../../assets/Visuals/Discord-Chatbot/discordDemo.JPG"
 coverAlt: ""
 description: Discord Bot capable of searching Youtube and SoundCloud to play requesting music onto the user's voice channel.
 order: 4

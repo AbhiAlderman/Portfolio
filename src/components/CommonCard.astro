@@ -13,6 +13,15 @@ const { post } = Astro.props;
             grid grid-rows-[auto_minmax(0,1fr)] h-full">
   <a href={`/projects/${post.id}/`} class="contents">
     <figure class="flex-1 relative aspect-video"> {/* 16:9 aspect ratio */}
+      <img
+          src={post.data.cover.src}
+          alt={post.data.coverAlt}
+          class="h-full w-full object-cover"
+          width={post.data.cover.width}
+          height={post.data.cover.height}
+          loading="lazy"
+        />
+      <!-- 
       {post.data.cover.format === 'gif' ? (
         <img
           src={post.data.cover.src}
@@ -24,11 +33,11 @@ const { post } = Astro.props;
         />
       ) : (
         <OptimizedCover
-          src={post.data.cover}
+          src={post.data.cover.src}
           alt={post.data.coverAlt}
           class="h-full w-full object-cover"
         />
-      )}
+      )}-->
     </figure>
     <div class="card-body p-4 flex flex-col gap-2">
       <div class="flex flex-wrap items-center gap-1 text-xs">

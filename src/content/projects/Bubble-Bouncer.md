@@ -1,5 +1,5 @@
 ---
-cover: "../Visuals/Bubble-Bouncer/thumbnail.png"
+cover: "../../assets/Visuals/Bubble-Bouncer/thumbnail.png"
 coverAlt: ""
 description: Game I made in 3 days for a game jam. Bounce on bubbles while avoiding obstacles to get a high score.
 order: 5

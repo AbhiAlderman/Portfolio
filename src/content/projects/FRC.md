@@ -1,5 +1,5 @@
 ---
-cover: "../Visuals/FRC/2020/robotPOV.gif"
+cover: "../../assets/Visuals/FRC/2020/robotPOV.gif"
 coverAlt: ""
 description: Competed in the FIRST Robotics Competition in High School from 2018 - 2020.
 order: 0

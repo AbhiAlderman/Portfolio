@@ -1,5 +1,5 @@
 ---
-cover: "../Visuals/Portfolio/frontpage.png"
+cover: "../../assets/Visuals/Portfolio/frontpage.png"
 coverAlt: ""
 description: Online Portfolio to view my past projects and experience.
 order: 2
