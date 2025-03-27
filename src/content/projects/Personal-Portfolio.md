@@ -11,6 +11,11 @@ tags:
 - CSS
 - React
 - Astro
+externalLinks:
+  - title: Current Portfolio Github Repo
+    link: "https://github.com/AbhiAlderman/Portfolio"
+  - title: Old Portfolio Github Repo
+    link: "https://github.com/AbhiAlderman/Portfolio_Old"
 ---
 
 # **_UNDER CONSTRUCTION_**

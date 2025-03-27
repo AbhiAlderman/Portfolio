@@ -10,6 +10,14 @@ tags:
 - Vision
 - Automation
 - Robotics
+externalLinks:
+  - title: 2018 Robot Github Repo
+    link: "https://github.com/AbhiAlderman/Ygnacio-Valley-High-School-FRC-2018-Code"
+  - title: 2019 Robot Github Repo
+    link: "https://github.com/AbhiAlderman/Ygnacio-Valley-High-School-FRC-2019-Code"
+  - title: 2020 Robot Github Repo
+    link: "https://github.com/AbhiAlderman/Ygnacio-Valley-High-School-FRC-2020-Code"
+    
 ---
 
 # **_UNDER CONSTRUCTION_**

@@ -9,6 +9,9 @@ tags:
 - Python
 - AWS
 - Linux
+externalLinks:
+  - title: Github Repo
+    link: "https://github.com/AbhiAlderman/Discord-Music-Bot"
 ---
 
 # **_UNDER CONSTRUCTION_**

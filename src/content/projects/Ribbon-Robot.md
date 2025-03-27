@@ -9,6 +9,9 @@ tags:
 - Java
 - Automation
 - Robotics
+externalLinks:
+  - title: Bay Area Science Festival Instagram Post
+    link: "https://www.instagram.com/p/B4X4bLPhOIs/"
 ---
 
 # **_UNDER CONSTRUCTION_**

@@ -10,10 +10,19 @@ tags:
 - KiCAD
 - TinkerCAD
 - Robotics
+externalLinks:
+  - title: Presentation Slides
+    link: "https://docs.google.com/presentation/d/1FW59XkIs3ZGVX3t927tC5mJX9hl6XicPWnYyxPDcV-w/edit"
+  - title: Github Repo
+    link: "https://github.com/AbhiAlderman/Animatronic-Eyes"
+  - title: Class Final Project Showcase Page
+    link: "https://sites.google.com/berkeley.edu/hope-spring-22-showcase/home"
 ---
+
 ***
 # **Summary**
 ***
+
 **Motivation:** Integrate mechanics and PCB design to create something fun and engaging. 
 
 In Spring 2022 I joined a UC Berkeley PCB focused Decal. This student-run class gave us the opportunity to learn how to create custom PCBs and use them for projects. For the final project, my group decided that we wanted to use the PCB to power some kind of small robotic contraption. Our final design was a pair of 3d printed eyes that were capable of blinking and looking at the face of the nearest person.  The eyes were modeled using TinkerCAD, the PCB was fully designed by us in KiCAD and manufactured in China, and the servos were controlled by an ESP32-CAM microcontroller. I programmed the microcontroller using Arduino, and was able to succesfully get a Webserver running by using the microcontroller as an access point. The webserver allowed me to see what the camera saw and fine-tune the facial recognition and tracking. The camera was able to locate the position of a face, and I used this position to control the position of the servos accordingly. This allowed the eyes to follow a face as they moved around.

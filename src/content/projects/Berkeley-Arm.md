@@ -10,6 +10,14 @@ tags:
 - Python
 - Vision
 - Robotics
+youtubePairs:
+  - title: "Full Project Demonstration"
+    link: "https://youtu.be/yDIczhh5lXk"
+externalLinks:
+  - title: Final Project Submission Webpage
+    link: "https://sites.google.com/berkeley.edu/106a-project/design"
+  - title: Github Repo
+    link: "https://github.com/AbhiAlderman/106a_Project"
 ---
 
 # **_UNDER CONSTRUCTION_**

@@ -9,7 +9,19 @@ const projects = defineCollection({
     description: z.string(),
     cover: image(),
     coverAlt: z.string(),
-    tags: z.array(z.string())
+    tags: z.array(z.string()),
+    youtubePairs: z.array(
+      z.object({
+        title: z.string(),
+        link: z.string(),
+      })
+    ).optional(),
+    externalLinks: z.array(
+      z.object({
+        title: z.string(),
+        link: z.string(),
+      })
+    ).optional()
   }),
 });
 

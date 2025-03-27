@@ -9,6 +9,11 @@ tags:
 - Godot
 - GameDev
 - Game Jam
+externalLinks:
+  - title: Itch.io game page
+    link: "https://toastyfraud.itch.io/bubble-bouncer"
+  - title: Github Repo
+    link: "https://github.com/AbhiAlderman/Bubble-Arcade-Game"
 ---
 
 # **_UNDER CONSTRUCTION_**

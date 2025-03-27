@@ -1,7 +1,8 @@
 ---
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import OptimizedCover from "../../components/OptimizedPicture.astro";
+import { YouTube } from "astro-embed";
+import Link from "../../components/Links.astro"
 
 export async function getStaticPaths() {
   const projects = await getCollection("projects");
@@ -31,23 +32,6 @@ const { Content } = await render(post);
           height={post.data.cover.height}
           loading="lazy"
         />
-      <!-- 
-      {post.data.cover.format === 'gif' ? (
-        <img
-          src={post.data.cover.src}
-          alt={post.data.coverAlt}
-          class="h-full w-full object-cover"
-          width={post.data.cover.width}
-          height={post.data.cover.height}
-          loading="lazy"
-        />
-      ) : (
-        <OptimizedCover
-          src={post.data.cover.src}
-          alt={post.data.coverAlt}
-          class="h-full w-full object-cover"
-        />
-      )}-->
       </div>
       <div class="mt-4 flex flex-wrap justify-center gap-2 prose-a:no-underline">
         {
@@ -58,9 +42,36 @@ const { Content } = await render(post);
           ))
         }
       </div>
+      {post.data.externalLinks && post.data.externalLinks.length > 0 && (
+        <div
+          class="w-full grid my-4"
+          style={`grid-template-columns: repeat(${post.data.externalLinks.length}, auto); gap: 1rem; justify-content: center;`}
+        >
+          {post.data.externalLinks.map((link) => (
+            <Link
+              href={link.link}
+              class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 text-center"
+            >
+              {link.title}
+            </Link>
+          ))}
+        </div>
+      )}
       <div class="mt-4 justify-center markdown-content" id="post-content">
         <Content />
       </div>
+      {post.data.youtubePairs && post.data.youtubePairs.length > 0 && (
+        <div class="youtube-pairs my-6">
+          {post.data.youtubePairs.map((pair) => (
+          <div class="youtube-video my-4">
+            <h3 class="text-xl font-bold mb-2 text-center">{pair.title}</h3>
+            <div class="justify-center">
+              <YouTube id={pair.link} class="mx-auto" />
+            </div>
+          </div>
+        ))}
+        </div>
+      )}
     </article>
   </main>
 </BaseLayout>

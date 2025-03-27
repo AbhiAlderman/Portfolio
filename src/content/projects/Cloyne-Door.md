@@ -8,6 +8,9 @@ title: Automatic Door
 tags:
 - Arduino
 - Automation
+externalLinks:
+  - title: Github Repo
+    link: "https://github.com/AbhiAlderman/RFID_Access_Controller"
 ---
 
 # **_UNDER CONSTRUCTION_**
