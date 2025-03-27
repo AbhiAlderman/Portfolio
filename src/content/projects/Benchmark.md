@@ -12,8 +12,6 @@ tags:
 ---
 ***
 # **Summary**
-
-
 ***
 At Benchmark Electronics I programmed and operated a KUKA Robotic Arm. I programmed the Robot arm to autonomously pick up tools, pick up and flip products, deburr holes, polish surfaces and brush edges. The potters wheel was equiped with an encoder and used to autonomously spin the different parts around. I used this to align holes to be deburred and to sping the product in the opposite direction as the arm, allowing for a smoother finish when polishing. This was all done in the KUKA programming language, where I utilized basic data structures and different loops to complete repetitive routines.
 

@@ -2,7 +2,7 @@
 cover: "../../assets/Visuals/Animatronic-Eyes/eyesproto.gif"
 coverAlt: ""
 description: 3D printed eyes that detects and follows faces using an ESP32 microcontroller equipped with a camera and a live webserver.
-order: 7
+order: 9
 slug: animatronic-eyes
 title: Animatronic Eyes
 tags:
