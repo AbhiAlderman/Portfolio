@@ -23,6 +23,8 @@ externalLinks:
 ---
 
 The **Final Project Submission Webpage** link will take you to the web page we submitted as the final portfolio for this project, which gives an in depth overview of this project's design and implementation, with visuals. I recommend checking that webpage out for all the information on this project, as it is laid out nicely. This page will simply be a rehash of the information presented there.
+
+# **VIDEO DEMO AT END OF PAGE**
 ***
 # **Overview**
 ***
