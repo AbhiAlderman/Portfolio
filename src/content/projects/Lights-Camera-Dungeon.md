@@ -1,7 +1,7 @@
 ---
 cover: "../../assets/Visuals/Lights-Camera-Dungeon/damaged.gif"
 coverAlt: ""
-description: 3D printed eyes that detects and follows faces using an ESP32 microcontroller equipped with a camera and a live webserver.
+description: Game I made with 3 other students for the Computer Graphics class at UC Berkeley. Top down roguelike with power ups, enemies, and a final boss
 order: 4
 slug: lights-camera-dungeon
 title: Lights, Camera, Dungeon!
